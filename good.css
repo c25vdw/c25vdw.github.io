@@ -1,0 +1,133 @@
+* {
+    color: #abb2bf;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px; /*1 rem*/
+    font-family: 'Fira Mono', monospace;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+.red {
+    color: #e06c75;
+}
+
+.yellow {
+    color: #e5c07b;
+}
+
+.green {
+    color: #98c379;
+}
+
+.blue {
+    color: #61afef;
+}
+
+.purple {
+    color: #c678dd;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+footer a {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #282c34;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        padding: 0 20%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    body {
+        padding: 0 24%;
+    }
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header div.banner {
+    flex-basis: 200px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.banner h1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+header nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main div.content {
+    flex: 1;
+}
+
+main div.sidebar {
+    flex: 0;
+    flex-basis: 300px;
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        padding: 0 1rem;
+    }
+    main div.sidebar {
+        flex: 1;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
